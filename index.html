@@ -109,6 +109,8 @@
 			}
 			.blok.candy{
 				display: block;
+				height: 541.641;
+				padding: 40px;
 			}
 			.column.blok.pantera{
 				position: fixed;
@@ -241,11 +243,12 @@
     }
 });
         	var cat = $(window).scrollTop();
-        	console.log(cat)
         	var blue = $( ".pantera" ).width();
         	$(".candy").width(blue + 0);
+
         	var yellow = $( ".pantera" ).height();
         	$(".candy").height(yellow + 40);
+        	console.log(yellow);
         	
             function runEffect() {
 
