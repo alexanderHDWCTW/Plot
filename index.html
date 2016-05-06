@@ -7,10 +7,11 @@
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+
 	    <style>
 	    	html{
 	    		font-family: 'Open Sans', sans-serif;
-	    		min-width: 1900px !important;
 	    	}
 	    	video#bgvid { 
 			    position: fixed;
@@ -47,20 +48,30 @@
     			filter: alpha(opacity=40); 	
 			}
 			.center{
-				padding: 80px;
+				padding: 80px 0px 80px 80px;
 				position: absolute;
 				top:25%;
   				vertical-align: middle;
   				margin-bottom:16.7%;
-  				width: 100%;
   				height: 400px;
-  					    		min-width: 1900px !important;
+			}
 
+			@media (max-width:1800px){
+				.center{
+					padding: 80px -40px 80px 80px;
+					position: absolute;
+					top:25%;
+	  				vertical-align: middle;
+	  				margin-bottom:16.7%;
+	  				width: 100%;
+	  				height: 400px;
+				}
 			}
 			@media (max-width:600px){
 				.center{
 					position: inherit;
 					margin:0 auto;
+
 				}
 				.blok{
 					display: block !important;
@@ -73,6 +84,7 @@
 			}
 			.iblok{
 				display:table;
+				position: relative;
 			}
 			.iiblok{
 				margin-top:40px;
@@ -111,6 +123,7 @@
 				display: block;
 				height: 541.641px;
 				padding: 40px;
+				position: relative;
 			}
 			.column.blok.pantera{
 				position: fixed;
@@ -120,14 +133,14 @@
 				position: absolute;
 				top:43%;
 				right: 11%;
-				color:#376A5F;font-weight:300;
+				color:#376A5F;
+				font-weight:300;
 			}
 			.a1{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
         background-size:cover;
-
 			    background: url(a1.jpg) no-repeat;
 			}
 			.a2{
@@ -249,8 +262,43 @@ background-color: #fefefe;
 				height: 541.641px;
 			    background: url(fire.png) no-repeat;
 			}
-
-
+			.wtf{
+				position: absolute;
+				top:90%;
+				width: 368px;
+				text-align:center;
+				font-weight:300;
+			}
+			.j1{
+    			background-repeat: no-repeat;
+    			background-attachment: fixed;
+    			background-position: center;
+        		background-size:cover;
+			    background: url(j1.png) no-repeat;
+			    background-color: none;
+			    
+			}
+			.j2{
+    			background-repeat: no-repeat;
+    			background-attachment: fixed;
+    			background-position: center;
+        		background-size:cover;
+			    background: url(j2.png) no-repeat;
+			    background-color: none;
+			    
+			}
+			.j3{
+    			background-repeat: no-repeat;
+    			background-attachment: fixed;
+    			background-position: center;
+        		background-size:cover;
+			    background: url(j3.png) no-repeat;
+			    background-color: none;
+			    margin: 0 auto;
+			}
+			.fml{
+				left:25px !important;
+			}
 	    </style>
 	</head>
 	<body>
@@ -275,9 +323,9 @@ background-color: #fefefe;
 				<div class='blok candy '>
 					<div class='iiblok b1'>
 						<div class='iblok'>
-							<h1 class='info'></h1>
 						</div>
 					</div>
+					<h2 class='wtf'>Dont lose your lucky spot</h2>
 				</div>
 				<div class='blok candy c4'>
 					<div class='iiblok'>
@@ -286,7 +334,7 @@ background-color: #fefefe;
 						</div>
 					</div>
 				</div>
-				<div class='blok candy'>
+				<div class='blok candy fml j1' style='margin-top: 215px;height:700px;'>
 					<div class='iiblok '>
 						<div class='iblok'>
 							<h1 class='info'></h1>
@@ -301,6 +349,7 @@ background-color: #fefefe;
 							<h1 class='info'></h1>
 						</div>
 					</div>
+					<h2 class='wtf'>Share spectacular views</h2>
 				</div>
 				<div class='blok candy'>
 					<div class='iiblok d1'>
@@ -308,6 +357,7 @@ background-color: #fefefe;
 							<h1 class='info'></h1>
 						</div>
 					</div>
+					<h2 class='wtf'>Never get lost again</h2>
 				</div>
 				<div class='blok candy  a3' style='margin-bottom: 225px'>
 					<div class='iiblok'>
@@ -316,8 +366,8 @@ background-color: #fefefe;
 						</div>
 					</div>
 				</div>
-				<div class='blok candy' style='margin-top: 225px'>
-					<div class='iiblok b3'>
+				<div class='blok candy fml j2' style='margin-top: 215px;height:700px;'>
+					<div class='iiblok '>
 						<div class='iblok'>
 							<h1 class='info'></h1>
 						</div>
@@ -331,6 +381,7 @@ background-color: #fefefe;
 							<h1 class='info'></h1>
 						</div>
 					</div>
+					<h2 class='wtf'>Mark your favorite places</h2>
 				</div>
 				<div class='blok candy'>
 					<div class='iiblok d3'>
@@ -338,6 +389,7 @@ background-color: #fefefe;
 							<h1 class='info'></h1>
 						</div>
 					</div>
+					<h2 class='wtf'>Spend more time relaxing outdoors</h2>
 				</div>
 				<div class='blok candy'>
 					<div class='iiblok d2'>
@@ -345,6 +397,7 @@ background-color: #fefefe;
 							<h1 class='info'></h1>
 						</div>
 					</div>
+					<h2 class='wtf'>Document your adventure</h2>
 				</div>
 				<div class='blok candy c3' style='margin-bottom: 215px'>
 					<div class='iiblok'>
@@ -353,8 +406,8 @@ background-color: #fefefe;
 						</div>
 					</div>
 				</div>
-				<div class='blok candy' style='margin-top: 215px'>
-					<div class='iiblok b2'>
+				<div class='blok candy fml j3' style='margin-top: 215px;height:700px;'>
+					<div class='iiblok'>
 						<div class='iblok' >
 							<h1 class='info'></h1>
 						</div>
