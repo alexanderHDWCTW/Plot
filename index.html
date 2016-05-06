@@ -504,9 +504,9 @@ background-color: #fefefe;
 
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-   		$( ".fyes" ).slideDown( "slow", function() {  });
-   		$( ".fno" ).slideDown( "slow", function() {  });
-   		$( ".fuu" ).slideDown( "slow", function() {  });
+   		$( ".fyes" ).fadeIn( "slow", function() {  });
+   		$( ".fno" ).delay( 500 ).fadeIn( "slow", function() {  });
+   		$( ".fuu" ).delay( 1000 ).fadeIn( "slow", function() {  });
    }
 
    if($(window).scrollTop() + $(window).height() != $(document).height()) {
