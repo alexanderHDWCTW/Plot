@@ -5,13 +5,19 @@
 	    <!-- ionic meta tags -->
 	    <title>Plot</title>
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+
+    		    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	    	    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+	    	    <script src="help.js"></script>
 
 	    <style>
 	    	html{
 	    		font-family: 'Open Sans', sans-serif;
+	    		min-width: 1800px;
+	    	}
+	    	body{
+	    		min-width: 1800px;
 	    	}
 	    	video#bgvid { 
 			    position: fixed;
@@ -264,7 +270,7 @@ background-color: #fefefe;
 			}
 			.wtf{
 				position: absolute;
-				top:90%;
+				top:80%;
 				width: 368px;
 				text-align:center;
 				font-weight:300;
@@ -299,6 +305,35 @@ background-color: #fefefe;
 			.fml{
 				left:25px !important;
 			}
+			.fyes{
+				position: fixed;
+				top:280px;
+				right:35%;
+			    background: url(skate-pin.png) no-repeat;
+				display: none;
+			    width: 200PX;
+			    height: 200PX;
+			}
+			.fno{
+				position: fixed;
+				top:780px;
+				right:10%;
+			    background: url(compass-pin.png) no-repeat;
+			    width: 200PX;
+			    height: 200PX;
+			    display: none;
+				
+			}
+			.fuu{
+				position: fixed;
+				top:1020px;
+				right:40%;
+			    background: url(climber-pin.png) no-repeat;
+			    width: 200PX;
+			    height: 200PX;
+			    display: none;
+				
+			}
 	    </style>
 	</head>
 	<body>
@@ -313,11 +348,12 @@ background-color: #fefefe;
 		</div>
 		<div class='center'>
 			<div class='column blok pantera' style='background-color:#00C59B'>
-				<h1 class='header' style='margin-top:0px;padding-bottom:38px;'>Plot</h1>
-				<h1 class='idgaf' style="">Secret Maps Made Easy</h1>
-				<img width="150px" src='googleplay.png'/>
-				</br>
-				<img width="150px" src='appstore.png'/>
+				&nbsp;&nbsp;&nbsp;	<img width='350' src='logo-white.png'/>
+				</br></br>
+&nbsp;&nbsp;&nbsp;	&nbsp;<img width="150px" style='margin-bottom:-5px' src='googleplay.png'/>
+&nbsp;&nbsp;&nbsp;				<img width="150px" src='appstore.png'/>
+</br>
+</br></br>
 			</div>
 			<div class='column slipknot news-item first-col' data-scroll-speed="100">
 				<div class='blok candy '>
@@ -422,6 +458,12 @@ background-color: #fefefe;
     }
 });
 			-->
+			<div class='fyes'>
+			</div>
+			<div class='fno'>			
+			</div>
+			<div class='fuu'>			
+			</div>
 		</div>
 
 
@@ -452,7 +494,27 @@ background-color: #fefefe;
 			$this.css('transform',   'translateY(' + offset + 'px)');
 			});
 			});
-        });
+
+});
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+   		$( ".fyes" ).slideDown( "slow", function() {  });
+   		$( ".fno" ).slideDown( "slow", function() {  });
+   		$( ".fuu" ).slideDown( "slow", function() {  });
+   }
+
+   if($(window).scrollTop() + $(window).height() != $(document).height()) {
+   			$('.fyes').fadeOut('slow');
+   			$('.fno').fadeOut('slow');
+   			$('.fuu').fadeOut('slow');
+   }
+});
+
+
+
     	</script>
+	    	    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+
 	</body>
 </html>
